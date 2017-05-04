@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:gaga="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/selector_item_appinfo_bg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <!--动态计算父容器的高, 宽是设置的精确值-->
+        <com.a520it.googleplay.views.RatilLayout
+            gaga:picRatio="2.43"
+            gaga:relative="width"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_subject_iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        </com.a520it.googleplay.views.RatilLayout>
+
+        <TextView
+            android:id="@+id/item_subject_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title" />
+    </LinearLayout>
+
+</FrameLayout>

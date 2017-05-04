@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--整体是一个侧滑-->
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/main_drawerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:gaga="http://schemas.android.com/apk/res-auto">
+
+    <!--右边显示的菜单区域-->
+    <FrameLayout
+        android:id="@+id/main_menu_left"
+        android:layout_gravity="left"
+        android:background="#b49d9d"
+        android:layout_width="180dp"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <!--主界面-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.astuetz.PagerSlidingTabStripMy
+            gaga:pstsIndicatorColor="#3db45e"
+            gaga:pstsTabTextSize="16sp"
+            gaga:pstsSelectedTabTextSize="18sp"
+            gaga:pstsTabTextColor="#222"
+            gaga:pstsSelectedTabTextColor="#3f51b4"
+            android:id="@+id/main_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
